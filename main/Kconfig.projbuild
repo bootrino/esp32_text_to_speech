@@ -1,0 +1,52 @@
+menu "Example Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "myssid"
+	help
+		SSID (network name) for the example to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+	default "mypassword"
+	help
+		WiFi password (WPA or WPA2) for the example to use.
+
+		Can be left blank if the network has no security set.
+
+config BT_REMOTE_NAME
+    string "BT remote device name"
+	default "ESP-ADF-SPEAKER"
+	help
+		BT_REMOTE_NAME (Bluetooth device name) for the example to connect to.
+
+
+config SAM_SPEED
+    int "SAM SPEED"
+    range 0 256
+    default "72"
+    help
+	    See SAM docs for SPEED
+
+config SAM_PITCH
+    int "SAM PITCH"
+    range 0 256
+    default "64"
+    help
+	    See SAM docs for PITCH
+
+config SAM_THROAT
+    int "SAM THROAT"
+    range 0 256
+    default "72"
+    help
+	    See SAM docs for THROAT
+
+config SAM_MOUTH
+    int "SAM MOUTH"
+    range 0 256
+    default "145"
+    help
+	    See SAM docs for MOUTH
+
+endmenu
